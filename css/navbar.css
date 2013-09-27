@@ -1,0 +1,111 @@
+nav.menu-h {
+  position: absolute;
+  right: 10%;
+  top: 10px;
+}
+
+nav.menu-h ul {
+  background: rgba(255,255,255, .2); 
+  border-radius: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relativee;
+  display: inline-table;
+}
+
+nav.menu-h ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav.menu-h ul li {
+  float: left;
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 2px 0px;
+  border-radius: 0px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;	
+  border-top: 1px solid #333;
+  border-bottom: 1px solid rgba(33,33,33, .6);
+}
+
+nav.menu-h ul li.alone {border-radius: 0px;}
+
+nav.menu-h ul li:hover {
+  /*background: rgba(9,90,166,.2);*/
+  -webkit-transition: all .3s ease-in-out;
+	moz-transition: .3s all;
+	-ms-transition: .3s all;
+	-o-transition: .3s all;	
+  border-top: 1px solid #c2cd23;
+  border-bottom: 1px solid #c2cd23;
+}
+nav.menu-h ul li:hover > ul {display: block; }
+nav.menu-h ul li:hover a {
+	color: #c2cd23;
+	transition:  all .3s ease-in-out;  
+	-webkit-transition: all .3s ease-in-out;
+	moz-transition: .3s all;
+	-ms-transition: .3s all;
+	-o-transition: .3s all;	
+}
+
+nav.menu-h ul li a {
+  display: block;
+  padding: 5px 10px 8px 10px;
+  height: 16px;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav.menu-h ul li a img{
+	transition: .3s all;
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-ms-transition: .3s all;
+	-o-transition: .3s all;	
+	padding: 0px;
+}
+
+nav.menu-h ul li a img:hover{
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);	
+}
+
+nav.menu-h > ul > li:last-child:hover{}
+
+nav.menu-h ul ul {
+	display: none;
+	background-color: rgba(181,205,221,0.9);
+	border: none;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: 180px;
+}
+
+nav.menu-h ul ul li {
+  float: none; 
+  border-top: 0px solid #ebd9b5;
+  border-bottom: 1px solid #095aa6;
+  position: relative;
+}
+
+nav.menu-h ul ul li a {
+  padding: 15px 15px;
+  height: 16px;
+  color: #000;
+}
+
+nav.menu-h ul ul li a:hover {background: rgba(9,90,166,.7);}
+nav.menu-h ul ul ul {position: absolute; left: 100%; top:0;}
